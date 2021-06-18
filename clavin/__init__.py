@@ -2,6 +2,7 @@ import smtplib
 from typing import Optional
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+__version__ = "0.1.0"
 
 class Mail(object):
     def __init__(self, text="", html="", subtype="alternative", subject="", from_address=None, to_list=[], cc_list=[], bcc_list=[]):
